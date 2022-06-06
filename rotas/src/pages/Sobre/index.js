@@ -1,11 +1,16 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-export default function Home(){
-    return(
-        <div>
-            <h1>Sobre o curso Reactjs</h1><br/>
-            <Link to="/">Home</Link><br/>
-            <Link to="/contato">Contatos</Link>
-        </div>
+function Sobre() {
+    return (
+      <div>
+        <h1>Pagina sobre a empresa</h1><br/><br/>
+
+        <Link to="/">Pagina Home</Link><br/>
+        <Link to="/contato">Contato</Link><br/>
+        
+      </div>
     );
-}
+  }
+  
+  export default Sobre;
+  

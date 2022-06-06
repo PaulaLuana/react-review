@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-export default function Home(){
+function Erro(){
     return(
         <div>
-            <h1>Hum, parece que essa pagina nao existe</h1><br/>
-
-            <span>Voce pode estar procurando por:</span> <br/>
+            <h2>Ops parece que essa pagina nao existe!</h2>
             <Link to="/">Home</Link><br/>
             <Link to="/sobre">Sobre</Link><br/>
-            <Link to="/contato">Contatos</Link>
+            <Link to="/contato">Contato</Link><br/>
         </div>
-    );
+    )
 }
+
+export default Erro;

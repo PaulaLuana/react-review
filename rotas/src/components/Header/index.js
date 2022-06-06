@@ -1,10 +1,17 @@
-import { Link } from "react-router-dom"
-
-export default function Header(){
+import { Link } from 'react-router-dom';
+import './style.css';
+function Header(){
     return(
         <header>
-            <h2>Header da Pagina</h2>
-            <Link to="/contato">Contatos</Link>
+            <h2>Sujeito Dev</h2>
+
+            <div className='menu'>
+                <Link to="/">Home</Link>
+                <Link to="/sobre">Sobre</Link>
+                <Link to="/contato">Contato</Link>
+            </div>
         </header>
     )
 }
+
+export default Header;
